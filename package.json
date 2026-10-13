@@ -1,0 +1,14 @@
+{
+  "name": "upkeep-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UPKEEP static demo site (no build step). Dev-only Playwright smoke tests.",
+  "scripts": {
+    "serve": "python3 -m http.server 8080",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "jsqr": "1.4.0"
+  }
+}
