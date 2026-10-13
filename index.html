@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UPKEEP · Fits right. Flows right.</title>
+  <meta name="description" content="UPKEEP: model-matched water-purifier parts made and wet-tested by Sarjan Watertech. Hackathon demo with fictional products and prices.">
+  <meta name="theme-color" content="#0B2545">
+  <link rel="icon" type="image/png" href="assets/logo_light.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/data.js"></script>
+  <script defer src="js/svg.js"></script>
+  <script defer src="js/qr.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/assist.js"></script>
+  <script defer src="js/tour.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-skip>Skip to content</a>
+
+  <div class="demo-banner" role="note">
+    <strong>Hackathon demo</strong> · fictional products and prices · no real orders
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#/" aria-label="UPKEEP home">
+        <img src="assets/logo_light.png" alt="UPKEEP" width="128" height="34">
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#/assist" data-nav="assist">UPKEEP Assist</a>
+        <a href="#/find" data-nav="find">Find a part</a>
+        <a href="#/reminders" data-nav="reminders">Reminders</a>
+        <a href="#/pro" data-nav="pro">For technicians</a>
+        <a href="#/about" data-nav="about">About</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-tour btn-sm" type="button" data-action="tour-start" title="Start guided demo (press D)">
+          <span data-icon="play"></span><span class="label"><span class="label-long">Start </span>guided demo</span> <span class="kbd" aria-hidden="true">D</span>
+        </button>
+        <button class="icon-btn" type="button" data-action="reset-demo" title="Reset demo">
+          <span data-icon="refresh"></span><span class="reset-label small" style="margin-left:6px;font-weight:600">Reset demo</span>
+        </button>
+        <a class="icon-btn" href="#/cart" aria-label="Cart" data-cart-link>
+          <span data-icon="cart"></span><span class="cart-count" data-cart-count data-zero="true">0</span>
+        </a>
+        <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-action="menu" aria-label="Menu">
+          <span data-icon="menu"></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <ul>
+        <li><a href="#/" data-nav="home">Home</a></li>
+        <li><a href="#/assist" data-nav="assist">UPKEEP Assist</a></li>
+        <li><a href="#/find" data-nav="find">Find a part</a></li>
+        <li><a href="#/cart" data-nav="cart">Cart</a></li>
+        <li><a href="#/reminders" data-nav="reminders">Reminders</a></li>
+        <li><a href="#/pro" data-nav="pro">For technicians</a></li>
+        <li><a href="#/about" data-nav="about">About the proposal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div id="app">
+      <noscript><div class="wrap section"><p>This demo needs JavaScript turned on.</p></div></noscript>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <img src="assets/logo_dark.png" alt="UPKEEP" width="120" height="32">
+          <div class="footer-tag">Fits right. Flows right.</div>
+          <p class="small">Model-matched purifier parts, made and wet-tested by Sarjan Watertech. Fits right, or we make it right.</p>
+          <p class="small">A proposal by <span data-team>Team Riddhi</span> for Sarjan Watertech · Hackathon 2026</p>
+        </div>
+        <div>
+          <div class="footer-tag" style="font-size:.95rem">Shop</div>
+          <ul class="footer-links">
+            <li><a href="#/">Home</a></li>
+            <li><a href="#/assist">UPKEEP Assist</a></li>
+            <li><a href="#/find">Find my part</a></li>
+            <li><a href="#/cart">Cart</a></li>
+            <li><a href="#/order">Latest order</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-tag" style="font-size:.95rem">More</div>
+          <ul class="footer-links">
+            <li><a href="#/verify/UPK-260901-0001-KIT3AQNN10P-X">Verify a part</a></li>
+            <li><a href="#/book">Book a technician</a></li>
+            <li><a href="#/reminders">Reminders</a></li>
+            <li><a href="#/pro">For technicians</a></li>
+            <li><a href="#/about">About the proposal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Hackathon demo · fictional brands, products and prices · no real orders or payments.</span>
+        <button class="btn btn-sm" type="button" data-action="reset-demo">Reset demo</button>
+      </div>
+    </div>
+  </footer>
+
+  <a class="fab" href="#/assist" data-fab aria-label="Chat with UPKEEP Assist">
+    <span data-icon="chat"></span><span class="fab-label">Ask UPKEEP Assist</span>
+  </a>
+
+  <div class="toasts" aria-live="polite" aria-atomic="false" data-toasts></div>
+</body>
+</html>
